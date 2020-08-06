@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Atma', sans-serif !important;
+  font-weight: bold !important;
+}
+
+#root {
+  width: 1024px ;
+  height: 768px ;
+  margin: 50px auto;
+  border-color: #353535;
+  border-radius: 40px;
+  border-width: 28px 103px 28px 74px;
+  border-style: solid;
+  position: relative;
+}
+
+#root:before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  transform: rotate(270deg);
+  background: url(https://cdn-images-1.medium.com/fit/c/200/200/1*PKHCHuLxDyZ8SV3PKxzizA.png) no-repeat center center / 100%;
+  width: 85px;
+  height: 180px;
+  top: 40%;
+}
+
+#root:after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: #5c5c5c;
+  position: absolute;
+  right: -79px;
+  top: 50%;
+  border: 1px inset #7b7b7b;
+}
+
+.footer {
+  position: absolute;
+  bottom:   0;
+  height:  80px;
+  width: 100%;
+  background: #ec5656;
+}
+
+.footer::before{
+  content: "";
+  width: 120px;
+  height: 130px;
+  border-radius: 50%;
+  background: #ec5656;
+  position: absolute;
+  left : 0;
+  right : 0;
+  top : -50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ec5656;
+}
+
+.mypokedex {
+  overflow: auto;
+  width: 840px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding : 5px;
+  padding-bottom: 50px;
+}
+
+.mypokedex div {
+  flex : 0 1 400px;
+  text-align: center;
+}
+
+.add-pokemon {
+  background: none;
+  border : none;
+  position: absolute;
+  outline: none;
+  content: '+';
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  top : -60px;
+  width: 100px;
+  left : 0;
+  right : 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-pokemon:focus{
+  outline:  0;
+}
+
+
+.title {
+  font-family: 'Atma', cursive;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+
+footer {
+  position: absolute;
+  bottom:  -100px;
+  color:  red;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+}
+
+footer a {
+  color: #000;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
