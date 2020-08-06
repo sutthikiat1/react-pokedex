@@ -9,6 +9,7 @@ export const DivCardPokemon = styled.div`
   border-radius: 5px;
   max-width: ${(props) => (props.isOpenPokedex ? "97%" : "100%")};
   &:hover {
+    box-shadow: 4px 4px 10px #aeaeae;
     .pokemon-detail {
       .pokemon-name {
         .btn-remove-pokemon {
