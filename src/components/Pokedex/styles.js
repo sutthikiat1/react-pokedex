@@ -5,6 +5,7 @@ export const DivModal = styled.div`
   .search-pokemon {
     position: relative;
     input {
+      font-size: 28px;
       width: 100%;
       height: 50px;
       border: 1px solid #e6e6e6;

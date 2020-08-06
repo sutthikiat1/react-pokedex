@@ -48,7 +48,9 @@ function Index(props) {
       </div>
       <div className="pokemon-detail">
         <div className="pokemon-name">
-          <h2>{name}</h2>
+          <div>
+            <h2>{name}</h2>
+          </div>
           <button
             onClick={() => addPokedex(pokemon)}
             className="btn-remove-pokemon"

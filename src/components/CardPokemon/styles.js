@@ -38,14 +38,20 @@ export const DivCardPokemon = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      overflow: hidden;
 
       h2 {
-        font-size: 24px;
+        max-width: ${(props) => (props.isOpenPokedex ? "180px" : "400px")};
+        font-size: ${(props) => (props.isOpenPokedex ? "30px" : "40px")};
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
       }
 
       .btn-remove-pokemon {
         display: none;
-        font-size: 20px;
+        font-size: 28px;
         border: none;
         outline: none;
         background: none;
